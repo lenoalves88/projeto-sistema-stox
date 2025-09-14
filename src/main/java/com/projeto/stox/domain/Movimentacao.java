@@ -6,7 +6,7 @@ public class Movimentacao {
     private String entradaDeProdutos;
     private String quantidadeParaEntregar;
     private String quantidadeSeparada;
-    private String quantidadeComAvaria;
+    
     private String saidaDeProdutos;
     private String quantidadeMovimentadaDia;
     private String estoqueTotal;

@@ -9,35 +9,38 @@ public class Produto {
     private Date dataDeVenciamento;
     private double preco;
 
-´public Produto(String nome, String descricao, Date dataDeVencimento, double preco){
+public Produto(String nome, String descricao, Date dataDeVencimento, double preco){
     this.nome = nome;
     this.descricao = descricao;
     this.dataDeVenciamento = dataDeVencimento;
     this.preco = preco;
 }
 
-    public void setNome(String nome) {
+public void setNome(String nome) {
         this.nome = nome;
-    }
-    public String getNome() {
+}
+public String getNome() {
         return this.nome;    
-    }
-    public void setDescricao(String descricao) {
+}
+
+public void setDescricao(String descricao) {
         this.descricao = descricao;
-    }
-    public String getDescricao() {
+}
+public String getDescricao() {
         return this.descricao;
-    }
-    public void setDataDeVencimento(Date dataDeVencimento) {
+}
+
+public void setDataDeVencimento(Date dataDeVencimento) {
         this.dataDeVenciamento = dataDeVencimento;
-    }
-    public Date getDataDeVencimento() {
+}
+public Date getDataDeVencimento() {
        return this.dataDeVenciamento;
-    }
-    public void setPreco(double preco) {
+}
+
+public void setPreco(double preco) {
         this.preco = preco;
-    }
-    public double getPreco() {
+}    
+public double getPreco() {
         return this.preco;
-    }
+}
 }
