@@ -3,29 +3,21 @@ package com.projeto.stox.domain;
 public class Movimentacao {
 
     private int id;
-    private String entradaDeProdutos;
     private String quantidadeParaEntregar;
     private String quantidadeSeparada;
-    
-    private String saidaDeProdutos;
+    private String saida;
+    private String observacao;
     private String quantidadeMovimentadaDia;
     private String estoqueTotal;
 
-public Movimentacao(String entradaDeProdutos, String quantidadeParaEntregar, String quantidadeSeparada, String quantidadeComAvaria, String saidaDeProdutos, String quantidadeMovimentadaDia, String estoqueTotal) {
-    this.entradaDeProdutos = entradaDeProdutos;
+public Movimentacao(String quantidadeParaEntregar, String quantidadeSeparada, String saida, String observacao, String quantidadeMovimentadaDia, String estoqueTotal) {
+    
     this.quantidadeParaEntregar = quantidadeParaEntregar;
     this.quantidadeSeparada = quantidadeSeparada;
-    this.quantidadeComAvaria = quantidadeComAvaria;
-    this.saidaDeProdutos = saidaDeProdutos;
+    this.saida = saida;
+    this.observacao = observacao;
     this.quantidadeMovimentadaDia = quantidadeMovimentadaDia;
     this.estoqueTotal = estoqueTotal;
-}
-
-public void setEntradaDeProdutos(String entradaDeProdutos) {
-    this.entradaDeProdutos = entradaDeProdutos;
-}
-public String getEntradaDeProdutos() {
-    return this.entradaDeProdutos;
 }
 
 public void setQuantidadeParaEntregar(String quantidadeParaEntregar) {
@@ -42,18 +34,18 @@ public String getQuantidadeSeparada() {
     return this.quantidadeSeparada;
 }
 
-public void setQuantidadeComAvaria(String quantidadeComAvaria) {
-    this.quantidadeComAvaria = quantidadeComAvaria;
+public void setSaida(String saidaDeProdutos) {
+    this.saida = saida;
 }
-public String getQuantidadeComAvaria() {
-    return this.quantidadeSeparada;
+public String getSaida() {
+    return this.saida;
 }
 
-public void setSaidaDeProdutos(String saidaDeProdutos) {
-    this.saidaDeProdutos = saidaDeProdutos;
+public void setObservacao(String observacao) {
+    this.observacao = observacao;
 }
-public String getSaidaDeProdutos() {
-    return this.saidaDeProdutos;
+public String getObservacao() {
+    return this.observacao;
 }
 
 public void setQuantidadeMovimentadaDia(String quantidadeMovimentadaDia) {

@@ -7,17 +7,13 @@ public class Fornecedor {
     private int id;
     private String nome;
     private String endereco;
-    private String produtoFornecido;
-    private double valorDoProduto;
     private Date ultimaCompra;
     private Date proximaCompra;
 
  
-public Fornecedor(String nome, String endereco, String produtoFornecido, double valorDoProduto, Date ultimaCompra, Date proximaCompra) {
+public Fornecedor(String nome, String endereco, Date ultimaCompra, Date proximaCompra) {
     this.nome = nome;
     this.endereco = endereco;
-    this.produtoFornecido = produtoFornecido;
-    this.valorDoProduto = valorDoProduto;
     this.ultimaCompra = ultimaCompra;
     this.proximaCompra = proximaCompra;
 }
@@ -34,20 +30,6 @@ public void setEndereco(String endereco) {
 }
 public String getEndereco() {
     return this.endereco;
-}
-
-public void setProdutoFornecido(String produtoFornecido) {
-    this.produtoFornecido = produtoFornecido;
-}
-public String getProdutoFornecido() {
-    return this.produtoFornecido;
-}
-
-public void setValorDoProduto(double valorDoproduto) {
-    this.valorDoProduto = valorDoProduto;
-}
-public double getValorDoProduto() {
-    return this.valorDoProduto;
 }
 
 public void setUltimaCompra(Date ultimaCompra) {
