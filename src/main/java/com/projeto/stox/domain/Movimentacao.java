@@ -1,20 +1,23 @@
 package com.projeto.stox.domain;
 
+import java.util.Date;
+
 public class Movimentacao {
 
     private int id;
     private String quantidadeParaEntregar;
     private String quantidadeSeparada;
-    private String saida;
+    private Date prazoSaidaEm;
     private String observacao;
     private String quantidadeMovimentadaDia;
     private String estoqueTotal;
+    private TipoMovimentacao tipoMovimentacao;
 
-public Movimentacao(String quantidadeParaEntregar, String quantidadeSeparada, String saida, String observacao, String quantidadeMovimentadaDia, String estoqueTotal) {
+public Movimentacao(String quantidadeParaEntregar, String quantidadeSeparada, Date prazoSaidaEm, String observacao, String quantidadeMovimentadaDia, String estoqueTotal) {
     
     this.quantidadeParaEntregar = quantidadeParaEntregar;
     this.quantidadeSeparada = quantidadeSeparada;
-    this.saida = saida;
+    this.prazoSaidaEm = prazoSaidaEm;
     this.observacao = observacao;
     this.quantidadeMovimentadaDia = quantidadeMovimentadaDia;
     this.estoqueTotal = estoqueTotal;
@@ -34,11 +37,11 @@ public String getQuantidadeSeparada() {
     return this.quantidadeSeparada;
 }
 
-public void setSaida(String saidaDeProdutos) {
-    this.saida = saida;
+public void setPrazoSaidaEm(Date prazoSaidaEm) {
+    this.prazoSaidaEm = prazoSaidaEm;
 }
-public String getSaida() {
-    return this.saida;
+public Date getPrazoSaidaEm() {
+    return this.prazoSaidaEm;
 }
 
 public void setObservacao(String observacao) {
@@ -61,5 +64,12 @@ public void setEstoqueTotal(String estoqueTotal) {
 }
 public String getEstoqueTotal() {
     return this.estoqueTotal;
+}
+
+public void setTipoMovimentacao(TipoMovimentacao tipoMovimentacao) {
+    this.tipoMovimentacao = tipoMovimentacao;
+}
+public TipoMovimentacao getTipoMovimentacao() {
+    return this.tipoMovimentacao;
 }
 }

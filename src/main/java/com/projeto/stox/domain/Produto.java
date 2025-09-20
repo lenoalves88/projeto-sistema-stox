@@ -8,6 +8,8 @@ public class Produto {
     private String descricao;
     private Date dataDeVenciamento;
     private double preco;
+    private Fornecedor fornecedor;
+    private TipoProduto tipoProduto;
 
 public Produto(String nome, String descricao, Date dataDeVencimento, double preco){
     this.nome = nome;
@@ -42,5 +44,19 @@ public void setPreco(double preco) {
 }    
 public double getPreco() {
         return this.preco;
+}
+
+public void setFornecedor(Fornecedor fornecedor) {
+        this.fornecedor = fornecedor;
+}
+public Fornecedor getFornecedor() {
+        return this.fornecedor;
+}
+
+public void setTipoProduto(TipoProduto tipoProduto) {
+        this.tipoProduto = tipoProduto;
+}
+public TipoProduto getTipoProduto() {
+        return this.tipoProduto;
 }
 }
